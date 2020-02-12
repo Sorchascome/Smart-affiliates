@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,400i,500,500i,700,700i,900&display=swap');
+@import './style/Header.scss';
+@import './style/Offers.scss';
+@import './style/Publisher.scss';
+@import './style/Partners.scss';
+@import './style/Verticals.scss';
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.Smart-Affiliates {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding: 4vw 14vw !important;
+  max-width: none !important;
+}
+
+button {
+  transition: 0.2s ease-out;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-weight: 700 !important;
+
+  &:focus, &:hover, &:active {
+    border: none !important;
+    outline: none !important;
+    box-shadow:none !important;
+  }
+
+  &:before {
+    background: rgb(255, 255, 255) !important;
+  }
+
+  &.basic {
+
+    &:before {
+      height: 2px;
+    }
+  }
+
+  &.outline, &.outline-alt {
+    border: 1px solid rgb(175, 175, 175) !important;
+    padding: 0.4vw 1.4vw;
+
+    @media (max-width: 378px) {
+      font-size: 5.05vw !important;
+      width: 42vw !important;
+      height: 12vw !important;
+    }
+
+    &:hover, &:active, &:focus {
+      color: #000;
+    }
+  }
+
+  &.outline-alt {
+
+    &:before {
+      background: rgb(0, 0, 0) !important;
+    }
+    
+    &:hover, &:active, &:focus {
+      color: #fff;
+    }
+  }
+
+}
+
+.homearrow {
+  position: fixed;
+  top: 50%;
+  left: 95%;
+  width: 1.6vw;
+  height: 1.6vw;
+  transition: all 0.5s ease-in-out;
+  background-image: url('./components/Arrow/arrow.png');
+  background-position: center center;
+  background-size: cover;
+  filter: opacity(15%);
+
+  &:hover {
+    filter: opacity(25%);
+  }
+}

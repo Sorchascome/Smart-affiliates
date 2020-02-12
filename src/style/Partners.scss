@@ -1,0 +1,220 @@
+.Partners {
+    background-color: #fff;
+
+    .title, .subtitle {
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 800;
+        font-size: 1.8vw;
+        color: #000;
+        margin: 1.24vw auto;
+        line-height: 1.26;
+
+        @media (max-width: 378px) {
+            text-align: center;
+            font-size: 10.24vw;
+            margin: 8vw auto;
+        }
+    }
+
+    .subtitle {
+        margin: 1.24vw 0;
+    }
+
+    .desc {
+        margin: 0.62vw 0;
+        font-size: 1vw;
+        font-weight: 400;
+        line-height: 1.26;
+
+        @media (max-width: 378px) {
+            font-size: 5.42vw;
+            text-align: center;
+        }
+    }
+
+    .carousel {
+        margin: 1vw auto;
+        width: 80%;
+
+        @media (max-width: 378px) {
+            height: 100vw;
+            width: 100%;
+        }
+
+        .carousel-column {
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-evenly;
+            margin: 2vw 0;
+            height: 100vw;
+            width: 32vw;
+        }
+
+        .carousel-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1vw 0;
+            height: 6vw;
+        }
+
+        .logo {
+            display: flex;
+            object-position: center center;
+            object-fit: cover;
+
+            img {
+                max-width: 10vw;
+                max-height: 6vw;
+                min-height: 1.4vw;
+                min-width: 3.4vw;
+                margin: auto;
+
+                @media (max-width: 378px) {
+                    max-width: 100vw;
+                    max-height: 10vw;
+                }
+            }
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            width: 2%;
+            margin: 0 -3.2vw;
+
+            @media (max-width: 378px) {
+                width: 10%;
+                margin: 0 -9.6vw;
+            }
+        }
+
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            filter: brightness(90%);
+        }
+    }
+
+    .regform {
+        font-size: 0.84vw;
+        font-weight: 400;
+        padding: 3.2vw 4vw;
+        margin: 2.2vw 0;
+        flex-direction: column;
+        display: flex;
+        width: 34vw;
+        height: 36vw;
+        min-height: 340px;
+        color: rgb(126, 126, 126);
+        background-color: #fff;
+        box-shadow: 0px 0px 2vw 0px rgba(0,0,0,0.15);
+
+
+        @media (max-width: 378px) {
+            font-size: 4.24vw;
+            width: 100vw;
+            margin: 8vw -12vw;
+            height: 136vw;
+            min-height: 0;
+        }
+
+        label {
+            margin: 0;
+
+            @media (max-width: 378px) {
+                font-size: 4.24vw;
+            }
+        }
+
+        .form-group {
+            margin: 1vw 0;
+
+            @media (max-width: 378px) {
+                margin: 4vw 0;
+            }
+        }
+    
+        .form-control {
+            font-size: 0.8vw;
+            font-weight: 400;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid rgb(202, 202, 202);
+
+            @media (max-width: 378px) {
+                font-size: 4.24vw;
+                border-bottom: 2px solid rgb(202, 202, 202);
+            }
+
+            &:focus {
+                border-bottom: 2px solid rgb(114, 114, 114);
+                box-shadow: none;
+
+                
+                @media (max-width: 378px) {
+                    border-bottom: 2px solid rgb(42, 42, 42);
+                }
+            }
+
+        }
+
+        textarea {
+            min-height: 2vw;
+            max-height: 6vw;
+            height: 6vw;
+
+            @media (max-width: 378px) {
+                min-height: 8vw;
+                max-height: 24vw;
+                height: 24vw;
+            }
+        }
+
+        .send {
+            text-align: center;
+            width: 12vw;
+            font-size: 1.02vw;
+            margin: 0 auto;
+            margin-top: auto;
+            color: #5ABFB8;
+            border-color: #5ABFB8 !important;
+
+            &:before {
+                background: #5ABFB8 !important;
+            }
+
+            &:hover, &:active, &:focus {
+                color: rgb(255, 255, 255);
+            }
+
+            span {
+                margin: auto;
+            }
+        }
+
+    }
+
+    .footer {
+        background: #373636;
+        width: 100%;
+        height: 4.6vw;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 378px) {
+            height: 28vw;
+        }
+
+        span {
+            color: #fff;
+            margin: auto;
+            font-size: 0.86vw;
+            font-weight: 300;
+
+            @media (max-width: 378px) {
+                text-align: center;
+                font-size: 3.6vw;
+                line-height: 2.32;
+                width: 60%;
+            }
+        }
+    }
+
+}

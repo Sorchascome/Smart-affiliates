@@ -1,0 +1,58 @@
+.Verticals {
+    background-color: #fff;
+    padding: 6vw 0;
+
+    .title {
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 800;
+        font-size: 1.8vw;
+        padding-bottom: 2vw;
+        color: #000;
+        width: fit-content;
+        position: relative;
+        margin: 1.4vw auto;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 80%;
+            bottom: 0;
+            left: 10%;
+            border-bottom: 0.54vw solid #5ABFB8;
+        }
+
+        @media (max-width: 378px) {
+            font-size: 10.24vw;
+            margin: 4vw auto;
+            padding-bottom: 7.2vw;
+            border-bottom: 1.8vw solid #5ABFB8;
+        }
+    }
+
+    .cell {
+        padding: 6vw;
+        height: 22vw;
+        width: 33.3333333%;
+        justify-content: center;
+
+        .inner {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 2.7vw;
+                height: 2.7vw;
+                margin: 0.4vw auto;
+            }
+    
+            .text {
+                margin-top: 1vw;
+                text-align: center;
+                font-size: 1.08vw;
+                line-height: 1.04vw;
+                letter-spacing: 0.06em;
+                color: #333333;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.Offers {
+    background-color: rgb(255, 255, 255);
+    height: 20vw;
+
+    .offer {
+        padding: 4.2vw 3vw;
+        display: flex;
+        flex-direction: column;
+        height: 22vw;
+        max-width: 30%;
+
+        @media (max-width: 378px) {
+            justify-content: space-evenly;
+            max-width: 100%;
+            height: 68vw;
+        }
+
+        img {
+            height: 4.5vw;
+            width: 4.5vw;
+            margin: 0 auto;
+            margin-bottom: 1vw;
+
+            @media (max-width: 378px) {
+                height: 20vw;
+                width: 20vw;
+            }
+        }
+
+        .title {
+            margin: 0.5vw 0;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1vw;
+
+            @media (max-width: 378px) {
+                font-size: 5.46vw;
+            }
+        }
+
+        .text {
+            font-size: 0.92vw;
+
+            p {
+                margin: 0.5vw 0;
+                line-height: 1.32;
+            }
+
+            @media (max-width: 378px) {
+                font-size: 5.46vw;
+            }
+        }
+    }
+}
